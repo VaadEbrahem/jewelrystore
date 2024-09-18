@@ -1,0 +1,122 @@
+.header-search-bar {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    padding-bottom: 4px;
+    padding-top: 5px;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+    box-shadow: none;
+}
+
+.header-search-bar.scrolled {
+    border-bottom-color: transparent;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand,
+.nav-link,
+.offcanvas-title {
+    text-transform: uppercase;
+}
+
+
+.Logo {
+    width: 100%;
+    max-width: 50%;
+    vertical-align: middle;
+}
+
+@media (max-width: 1200px) {
+    .Logo {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .Logo {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 995px) {
+    .Logo {
+        max-width: 70%;
+    }
+}
+
+@media (max-width: 990px) {
+    .Logo {
+        max-width: 60%;
+    }
+}
+
+.navbar-toggler-icon {
+    filter: brightness(0);
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.custom-close-button {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+.nav-link {
+    text-decoration: none !important;
+}
+
+.Title-navbar-nav {
+    display: flex !important;
+    flex-grow: 1 !important;
+    gap: 24px;
+    margin-right: 16px;
+}
+
+.Titleitem {
+    margin-left: 8px !important;
+    margin-right: 8px !important;
+}
+
+.Titlelink {
+    font-weight: 600 !important;
+    color: #000 !important;
+    text-decoration: none !important;
+}
+
+.Titlelink:hover {
+    color: #111 !important;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-left: auto;
+}
+
+@media (max-width: 995px) {
+    .icon-container {
+        margin-top: auto;
+        padding: 20px;
+    }
+}
+
+.hoverCi {
+    font-size: 28px;
+    line-height: 1;
+    font-weight: normal;
+    transition: color 0.3s ease, transform 0.3s ease;
+    color: #111 !important;
+}
+
+.hoverCi:hover {
+    color: #c9a236 !important;
+    transform: scale(1.1);
+}

@@ -1,0 +1,106 @@
+.IconTitle {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    /* مسافة بين المجموعات */
+
+}
+
+.IconTitle div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    /* مسافة صغيرة بين الأيقونة والنص */
+}
+
+.IconTitle div:last-child {
+    margin-left: auto;
+    /* يجعل العنصر الأخير يندفع لأقصى اليمين */
+}
+
+
+
+/* ميزات الأيقونات */
+.IconTitle div .IconSvg {
+    font-size: 20px;
+    color: #000;
+}
+
+/* ميزات العناوين */
+.IconTitle div p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    margin: 0;
+    /* إزالة المسافة الافتراضية */
+    line-height: 1.5;
+}
+
+
+@media (max-width: 768px) {
+    .IconTitle {
+        gap: 20px;
+    }
+
+    .IconTitle div {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .IconTitle {
+        gap: 30px;
+    }
+
+    .IconTitle div {
+        gap: 10px;
+    }
+
+    .IconTitle div .IconSvg {
+        font-size: 16px;
+    }
+
+    .IconTitle div p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .IconTitle {
+        gap: 10px;
+        width: 95%;
+    }
+
+    .IconTitle div {
+        gap: 2px;
+    }
+
+    .IconTitle div .IconSvg {
+        font-size: 15px;
+    }
+
+    .IconTitle div p {
+        font-size: 10px;
+        font-weight: 600;
+    }
+
+}
+
+
+/* هون مشان الكروت **/
+
+
+.CartBox {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping to the next line if there's not enough space */
+    gap: 16px; /* Adjust the spacing between items as needed */
+    justify-content: center; /* Centers the items horizontally */
+}
+
+.CartBox .Box_Card_Content {
+    background-color: #f0f0f0;
+    padding: 16px; /* Adjust the padding as needed */
+    border-radius: 2px; /* Optional: adds rounded corners */
+    width: 200px; /* Set a fixed width or adjust as needed */
+    text-align: center; /* Centers the text within each card */
+}
